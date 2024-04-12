@@ -179,9 +179,6 @@ footer p {
 
 /* slickNav_menu */ 
 
-.slicknav_menu{
-	background-color: #800000;
-}
 
 /* media queries */ 
 
@@ -249,17 +246,20 @@ footer p {
    
 
 
-.slicknav_menu {
-	display:none;
-}
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
 	/* #menu is the original menu */
-	 #menu {
-		display:none;
-	}
-	
-	.slicknav_menu  {
+	 #mobile_menu {
 		display:block;
 	}
+	
+	#nav_menu{
+		display: none;
+	}
+}
+
+@media screen and (min-width:851px){
+    #mobile_menu {
+	  display:none;
+   }
 }
