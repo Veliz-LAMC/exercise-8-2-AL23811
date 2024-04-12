@@ -9,13 +9,14 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/slicknav.css"/>
 	<link rel="stylesheet" href="styles/c8_main.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./js/jquery.slicknav.js"></script>
-	<script>
-		$(function(){
-			$('#menu').slicknav();
-		});
-	</script>
+	<link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
 </head>
 
 <body>
@@ -24,22 +25,22 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
-    <nav id="mobile_menu"></nav>
-    <nav id="nav_menu">
-    	<ul id="menu">
-        	<li><a href="index.html" class="current">Home</a></li>
-        	<li><a href="speakers.html">Speakers</a></li>
-        	<li><a href="luncheons.html">Luncheons</a></li>
-        	<li><a href="tickets.html">Tickets</a></li>
-        	<li><a href="aboutus.html"> About Us</a>
-            	<ul>
-                	<li><a href="#">Our History</a></li>
-                	<li><a href="#">Board of Directors</a></li>
-                	<li><a href="#">Past Speakers</a></li>
-                	<li><a href="#">Contact Information</a></li>
-            	</ul>
+<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="luncheons.html">Luncheons</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="aboutus.html"> About Us</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Board of Directors</a></li>
+                <li><a href="#">Past Speakers</a></li>
+                <li><a href="#">Contact Information</a></li>
+            </ul>
         	</li>
-    	</ul>
+    </ul>
 	</nav>    
 	
 	<main>
@@ -95,3 +96,4 @@
 	</footer>
 </body>
 </html>
+
